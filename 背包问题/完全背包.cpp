@@ -18,7 +18,7 @@ int main(){
         }
     }
     cout<<dp[n][V]<<endl;
-    //һγ
+    //二维
     vector<int> dp1(vector<int>(V+1));
     for(int i=1;i<=n;i++){
         for(int j=w[i];j<=V;j++){

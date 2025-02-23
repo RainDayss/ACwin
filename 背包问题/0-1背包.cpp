@@ -14,13 +14,13 @@ int main(){
             for(int j=1;j<=m;j++){
                 dp[i][j]=dp[i-1][j];
                 if(j>=v[i]){
-                    dp[i][j]=max(dp[i-1][j],dp[i-1][j-v[i]]+w[i]);
+                    dp[i][j]=max(dp[i][j],dp[i-1][j-v[i]]+w[i]);
                 } 
             }
         }
     cout<<dp[n][m]<<endl;
 
- //------------------һά�Ż�dp------------------------------
+ //----------------------一维优化
     int dp1[MAX]={0};
     for(int i=1;i<=n;i++){
         // for(int j=m;j>=1;j--){
